@@ -1,0 +1,21 @@
+
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Title</th>
+        <th scope="col">Description</th>
+        <th scope="col">Image</th>
+      </tr>
+    </thead>
+    <tbody>
+       <% blogs.forEach((blog)=>{ %>
+      <tr>
+        <td><%= blog.title %></td>
+        <td><%= blog.description %></td>
+        <td><img src="<%= blog.img %>" alt="image" width="46px" height="46px"></td>
+      </tr>
+        <% }) %>
+    </tbody>
+  </table>
+  
+  
